@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/menup.css">
+    <script src="js/menu.js" defer></script>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/menu.js"></script>
+    <script src="js/ajax.js"></script>
+    <link rel="stylesheet" href="css/contactos.css">
+    <link rel="stylesheet" href="css/cajitas.css">
+
+</head>
+
+<body>
+    <nav id="menu" class="menu">
+        <label>El Salvador</label>
+        <ul class="menu_items" id="otroModo">
+            <li class="active"><a href="Inicio.html">El Salvador</a></li>
+            <li><a href="QS-redirigidor.html">¿Quienes Somos?</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#">Departamentos</a>
+                <ul>
+                    <li><a href="zonaoriental.html">Zona Oriental</a></li>
+                    <li><a href="zonacentral.html">Zona Central</a></li>
+                    <li><a href="zonaoccidental.html">Zona Occidental</a></li>
+                </ul>
+            </li>
+        </ul>
+        <span class="icon-menu" id="btn_menu">
+        </span>
+    </nav>
+
+    <div id="demo">
+        <h5>Dar click para ver los Integrantes del equipo</h5>
+        <button type="button" onclick="loadDoc()" id="boton-redi">Ver Integrantes</button>
+    </div>
+
+    <script>
+        function loadDoc() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                document.getElementById("demo").innerHTML =
+                    this.responseText;
+            }
+            xhttp.open("GET", "QS.html");
+            xhttp.send();
+        }
+    </script>
+
+</body>
+<footer class="footer">
+    <div>
+        © 2021 Copyright:
+        <a href="http://www.udb.edu.sv/udb/">Universidad Don Bosco 2021</a>
+    </div>
+</footer>
+
+</html>
