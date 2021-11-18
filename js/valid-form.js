@@ -1,5 +1,5 @@
 var i = document.getElementById('b');
-i.addEventListener ("click",validar);
+i.addEventListener ("click",validar, correoval);
 
 function validar(){
     var z = document.getElementById('nombre').value;
@@ -26,7 +26,7 @@ function validar(){
 }
 //validador de correo electronico
 function correoval(c){
-    var c = document.getElementById('correo').value;
+
     var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
     var valides= expReg.test(c);
     if(valides==true){
