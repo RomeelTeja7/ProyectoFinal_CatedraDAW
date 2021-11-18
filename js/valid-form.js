@@ -1,33 +1,34 @@
-var boton = document.getElementById("boton");
-boton.onclick = validar;
+var i = document.getElementById('b');
+i.addEventListener ("click",validar);
 
 function validar(){
-//validador de campos para saber que no estan vacios
-    if(form.nombre.value==0){
+    var z = document.getElementById('nombre').value;
+    var x = document.getElementById('pais').value;
+    var c = document.getElementById('correo').value;
+    var v = document.getElementById('mensaje').value;
+    if( z.length==0){
         alert("El campo Nombre esta vacio");
-        form.nombre.value="";
-        return false;
+        return ;
     }
-    if(form.pais.value==0){
+    if( x.length==0){
         alert("El campo Pais esta vacio");
-        form.pais.value="";
-        return false;
+        return ;
     }
-    if(form.correo.value==0){
+    if( c.length==0){
         alert("El campo Correo esta vacio");
-        form.correo.value="";
-        return false;
+        return ;
     }
-    if(form.mensaje.value==0){
+    if( v.length==0){
         alert("El campo Mensaje esta vacio");
-        form.mensaje.value="";
-        return false;
+        return ;
     }
+
 }
 //validador de correo electronico
-function correoval(correo){
+function correoval(c){
+    var c = document.getElementById('correo').value;
     var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-    var valides= expReg.test(correo);
+    var valides= expReg.test(c);
     if(valides==true){
     }
     else{

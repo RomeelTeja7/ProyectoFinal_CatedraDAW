@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/formulario.css">
         <script src="js/localstorage.js"></script>
-        <script src="js/valid-form.js"></script>
         <script src="js/menu.js"></script>
         
     </head>
@@ -35,14 +34,14 @@
 
 <section class="formulariore">
   <h4>Formulario</h4>
-  <form name="form">
+  <form class="form">
     <input class="controls" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
     <input class="controls" name="pais" id="pais" placeholder="Ingrese su Pais">
     <input class="controls"  name="correo" id="correo" placeholder="Ingrese su correo">
     <textarea class="controles" name="mensaje" id="mensaje" placeholder="Ingrese el mensaje deseado"></textarea>
-    <button onclick="validar(); onclick=save(); onclick=correoval(form.correo.value); onclick=correoval(form.correo.value); "type="submit" class="botons" id="boton">Enviar</button>
+    <button  type="submit" class="botons"  id="b" >Enviar</button>
     <input type="button" class="botons" value="Remover Formulario" onclick="Javascript:remove()">
-
+    <script src="js/valid-form.js"></script>
   </form>
     </section>
 
