@@ -1,0 +1,51 @@
+.Contenedor_todo {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: black; 
+    font-size: 18px;  
+    background: #f1f1f1; 
+    margin: 75px; 
+    padding: 80px;
+    overflow: hidden; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #5878ca;
+    text-align: center;
+    }
+
+
+
+    .card-link{
+        color: black;
+    }
+    @media screen and (max-width: 1024px) {
+        .Contenedor_todo {
+            font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+            color: black; 
+            padding-left: 50px;
+            font-size: 17px;  
+            background: #f1f1f1; 
+            margin: 25px; 
+            padding:6px;
+            border-radius: 35px 0px 35px 0px; 
+            -moz-border-radius: 35px 0px 35px 0px; 
+            -webkit-border-radius: 35px 0px 35px 0px; 
+            border: 2px solid #5878ca;
+            }
+            
+
+    
+    }
+    
+    
+    @media screen and (max-width: 858px) {
+    
+
+    }
+    
+    @media screen and (max-width: 858px) and (orientation: landscape) {
+    
+        
+    }
+    
+    

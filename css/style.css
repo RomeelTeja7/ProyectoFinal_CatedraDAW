@@ -1,0 +1,96 @@
+body{
+    background-color:ghostwhite;
+}
+label{
+margin-left: 20px;
+color: white;
+font-size: 30px;
+}
+.map{
+    width: 50%;
+    margin: auto;
+}
+
+.map path{
+    fill: yellowgreen;
+    fill-opacity: 1;
+    stroke:black;
+    stroke-opacity: 1;
+    stroke-width:5;
+}
+
+path{
+    fill:none;
+    stroke:black;
+    pointer-events:all;
+}
+ 
+
+.mapa_sv_select
+  {
+    transition: all 0.25s ease-out;
+    transform-origin: 50% 50%;
+  }
+  
+  .mapa_sv_select:hover {
+    transform: scale(1.1);
+  }
+  
+.container{
+    padding-top: 5%;
+}
+
+.map2{
+  width: 70%;
+  margin-left: 20%;
+}
+
+.map2 path{
+    fill:brown;
+    fill-opacity: 1;
+    stroke:black;
+    stroke-opacity: 1;
+    stroke-width:5;
+}
+
+
+.mapa3{
+  width: 70%;
+  margin-left: -7%;
+  margin-top: -10%;
+}
+
+.mapa3 path{
+    fill:cornflowerblue;
+    fill-opacity: 1;
+    stroke:black;
+    stroke-opacity: 1;
+    stroke-width:5;
+}
+
+.map4{
+  width: 70%;
+  margin-left: 32%;
+ 
+}
+
+.map4 path{
+  fill:darkmagenta;
+    fill-opacity: 1;
+    stroke:black;
+    stroke-opacity: 1;
+    stroke-width:5;
+}
+
+.imagencontacto{
+
+  margin-top: -29%;
+  margin-bottom: -10%;
+
+}
+
+.container{
+  width: 40%;
+  height: 40%;
+  margin-bottom: -10%;
+}
