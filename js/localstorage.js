@@ -1,3 +1,9 @@
+var i = document.getElementById('b');
+i.addEventListener ("click",save);
+
+var z = document.getElementById('miBoton');
+z.addEventListener ("click",remove);
+
 var myArrayObject = [];
 var divState;
 //verifica el navegador
@@ -50,6 +56,10 @@ function save() {
     }
    }
 //remueve los datos del localstorage
+
+var miBoton = document.getElementById("miBoton");
+miBoton.onclick = leer;
+
 function remove() {
  console.log("Removiendo dato del localStorage.");
  localStorage.removeItem("nombre");

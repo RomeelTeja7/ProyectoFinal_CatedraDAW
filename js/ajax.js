@@ -1,3 +1,6 @@
+var boton = document.getElementById("boton-redi");
+boton.onclick = loadDoc;
+
 function loadDoc() {
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function () {
@@ -7,3 +10,4 @@ function loadDoc() {
     xhttp.open("GET", "QS.html");
     xhttp.send();
 }
+document.getElementById("body").innerHTML;
