@@ -5,8 +5,8 @@
 */
 //se declara un objeto json para almacenar la información
 // y se agrega la informacion a mostrar en la pagina de inicio
-var Pelis = {
-    "Peliculas": [
+var Info = {
+    "sv": [
     {"General": "El Salvador, oficialmente República de El Salvador, es un país soberano de América Central ubicado en el litoral del océano Pacífico con una extensión territorial de 21 041 km²",
     "Poblacion": "En el año 2021 contaba con una población estimada en 6 325 827 habitantes según una estimación realizada por la Dirección General de Estadísticas y Censos en compañía de la CEPAL",
     "Economia": "La economía salvadoreña ha experimentado una mezcla de resultados durante los sucesivos gobiernos del partido ARENA en las iniciativas del mercado libre y el modelo de gerencia fiscal que incluyen la privatización del sistema de actividades bancarias",
@@ -19,9 +19,9 @@ var Pelis = {
    var div = document.getElementById("informacion");
    // le agregamos a la variable el objeto a proyectar
    // y le asignamos los nombre de el objeto JSON declarado anteriormente
-   div.innerHTML = CineDatos(Pelis.Peliculas);
+   div.innerHTML = ESA(Info.sv);
    //declaramos la funcion y le asiganamos una variable la cual nos servira para asiganr los valores 
-   function CineDatos(datos){
+   function ESA(datos){
     //declaramos un variable para utilizar la en dado caso que aya más objetos y se repita tantas veces 
     // objetos esten 
     var total = datos.length;
@@ -32,9 +32,9 @@ var Pelis = {
 
     data += "<div class=\"unido\">\n";
 
-    data += "<div class=\"movie-cover1\"/>\n";
+    data += "<div class=\"\"/>\n";
     data += "</div>\n";
-    data += "<div class=\"box-movie-format\">\n";
+    data += "<div class=\"\">\n";
     data +="<h2>Informacion General</h2>";
     //Asignamos los datos de el objeto JSON para mostrar los en el DIV y asi con todos los datos
     data += "<p>" + datos[i].General +"</p>";
